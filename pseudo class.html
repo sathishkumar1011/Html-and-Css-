@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+<title>Pseudo property</title>
+<style>
+p::before {
+content: ">";
+color: blue;
+font-weight: bold;
+}
+
+p::after {
+content: "*";
+color: red;
+font-weight: bold;
+}
+p::first-line {
+font-size: 18px;
+color: gray;
+text-transform: uppercase;
+text-decoration: overline;
+text-shadow: 3px 4px 5px cyan;
+}
+p::first-letter {
+font-size: 45px;
+color: blue;
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 4px 3px 2px pink;
+}
+p::selection {
+background:black;
+color:brown;
+}
+li::marker {
+color: pink;
+font-size: 40px;
+font-weight: bold;
+}
+input::placeholder {
+color: mediumvioletred;
+font-style: italic;
+letter-spacing: 2.5px;
+}
+::file-selector-button {
+background: linear-gradient;
+color:red;
+border: 3px solid purple;
+padding: 6px 10px;
+border-radius: 12px;
+cursor: pointer;
+}
+::spelling-error {
+background: cyan;
+text-decoration:underline teal;
+}
+</style>
+</head>
+<body>
+ <center>    
+<h2>Pseudocode Property</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<li>logesh</li>
+<li>sharu</li>
+<li>sanjay</li>
+</ul>
+<br>
+<input type="text" placeholder="Enter your name">
+<br><br>
+<input type="file">
+<br><br>
+</center>
+</body>
+</html>
