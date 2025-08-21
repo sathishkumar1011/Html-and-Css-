@@ -1,0 +1,49 @@
+<!doctype html>
+<head><title>pseudo</title>
+</head>
+<style>
+p::before{
+content:"<";
+color:blue;
+font-weight:bold;
+}
+p::after{
+content:"*";
+color:gray;
+font-weight:bold;
+}
+p::first-line{
+font-size:30px;
+color:teal;
+text-transform:uppercase;
+text-decoration:overline;
+text-shadow: 4px 3px 2px orange:
+}
+p::first-letter{
+font-size:25px;
+color:green;
+text-transform:uppercase;
+text-decoration:overline;
+}
+p::selection{
+background:yellow;
+color:brown;
+}
+</style>
+<body>
+<div>
+<p>welcome</p>
+<p>one<p>
+</div>
+<ul>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+</ul>
+<br>
+<input type="address" placeholder="enter the address">
+<br><br>
+<input type="one">
+<br><br>
+</body>
+</html>
