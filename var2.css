@@ -1,0 +1,17 @@
+
+:root{
+--yellow:red;
+}
+body
+{
+background-color:var(--yellow);
+padding:20px;
+margin:15px;
+
+}
+h1{
+color:var(--red);
+background-color:yellow;
+padding:20px;
+margin:15px;
+}

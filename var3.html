@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<title>CSS var() Function</title>
+<style>
+:root {
+  --rx-bg-color:green;
+  --rx-text-color: #003366;
+  --rx-padding: 18px; 
+  --rx-btn-hover: red;
+  --rx-box-width: 350px;
+}
+
+body {
+  background-color: var(--rx-bg-color);
+  font-family: Arial, sans-serif;
+  margin:20px;
+  padding: 30px;
+  text-shadow: 3px 4px 5px red;
+  align-items: center;
+}
+
+
+
+.box {
+  color: var(--rx-text-color);
+  background-color: #fff;
+  padding: var(--rx-padding);
+  width: var(--rx-box-width);
+  margin: 20px auto;
+
+  
+}
+
+.btn:hover{
+  background-color: #ff4500;
+}
+
+
+.btn {
+  background-color: var(--rx-text-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  }
+
+.btn:hover {
+  background-color: var(--rx-btn-hover);
+}
+</style>
+</head>
+<body>  
+<center>         
+
+<h1 style="text-align:center; color: var(--rx-text-color);">CSS var() Function</h1>
+
+<div class="container">
+  <div class="box">
+    <h2> One</h2>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officia debitis, libero autem ullam cupiditate esse tempora laborum, molestiae ipsam aut architecto ut sequi ab.</p>
+    <button class="btn">Click Me</button>
+  </div>
+
+  <div class="box">
+    <h2> Two</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit dicta deleniti itaque esse eveniet natus, quisquam ipsum nulla nemo beatae eius aliquam optio quidem!</p>
+    
+    <button class="btn">Click Me</button>
+  </div>
+</div>
+</center>
+</body>
+</html>
+
