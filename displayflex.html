@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <title>Flexbox Image Gallery</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; padding: 1.5rem; background: #f6f7fb; color: #222; }
+
+    h1 { text-align: center; margin-bottom: 10px; }
+
+    
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;          
+      gap: 1rem;                 
+      justify-content: center;   
+      align-items: stretch;      
+    }
+
+    
+    .card {
+      flex: 1 1 220px;           
+      max-width: 320px;          
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+      height: 220px;
+          
+    }
+
+    .card .caption {
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin: 1rem 0 1.25rem;
+    }
+    .controls button {
+      padding: 0.5rem 0.9rem;
+      border: 1px solid #ddd;
+      background: red;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flexbox Image Gallery</h1>
+
+  
+  <section class="gallery" id="gallery">
+    <figure class="card">
+      <img src="https://picsum.photos/id/1015/800/600" alt="Mountain and lake">
+      <figcaption class="caption">Mountain Lake</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://picsum.photos/id/1025/800/600" alt="Dog portrait">
+      <figcaption class="caption">Golden Friend</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://picsum.photos/id/1003/800/600" alt="River and rocks">
+      <figcaption class="caption">Riverscape</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://picsum.photos/id/1011/800/600" alt="Forest trees">
+      <figcaption class="caption">Forest Light</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://picsum.photos/id/1005/800/600" alt="Desert dunes">
+      <figcaption class="caption">Desert Dunes</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="https://picsum.photos/id/1035/800/600" alt="City skyline">
+      <figcaption class="caption">City Skyline</figcaption>
+    </figure>
+  </section>
+
+  
+    
+  </script>
+</body>
+</html>
