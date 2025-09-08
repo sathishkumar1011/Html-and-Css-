@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Name Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background:red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      width: 300px;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 10px;
+    }
+
+    .display {
+      background: #222;
+      color: white;
+      font-size: 24px;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: right;
+    }
+
+    .keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      padding: 20px 10px;
+      border: none;
+      border-radius: 6px;
+      background: #1976d2;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0d47a1;
+    }
+
+    .equal {
+      grid-column: span 2;
+      background: #388e3c;
+    }
+    .equal:hover {
+      background: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">0</div>
+    <div class="keys">
+      <button>Hero</button>
+      <button>Bajaj</button>
+      <button>Yamaha</button>
+      
+
+      <button>Honda</button>
+      <button>Royal Enfield</button>
+      <button>TVS</button>
+      
+
+      <button>Kawasaki</button>
+      <button>KTM</button>
+      <button>Suzuki</button>
+      <button>×</button>
+
+      <button>Aprilia</button>
+      <button>Clear</button>
+      
+
+      <button class="equal">=</button>
+    </div>
+  </div>
+</body>
+</html>
