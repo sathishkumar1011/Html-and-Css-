@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Brand Dialer</title>
+<link rel="stylesheet" href="C:\Users\sathi\Desktop\css basic\HTML\bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\css\bootstrap.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      margin: 0;
+    }
+    .dialer {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      width: 350px;
+      display: grid;
+      gap: 15px;
+    }
+    .screen {
+      border: 2px solid #ff6f61;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 10px;
+      text-align: center;
+      background: #ffeae6;
+      min-height: 40px;
+      font-weight: bold;
+      color: #ff3b2e;
+    }
+    .keypad {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .keypad button {
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #ff6f61;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .keypad button:hover {
+      background: #e63946;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+    }
+    .call {
+      background: #06d6a0;
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .call:hover {
+      background: #059669;
+    }
+  </style>
+</head>
+<body>
+  <div class="dialer">
+    <div class="screen">Car Dialer</div>
+    <div class="keypad">
+      <button>Toyota</button>
+      <button>BMW</button>
+      <button>Audi</button>
+      <button>Mercedes</button>
+      <button>Honda</button>
+      <button>Ford</button>
+      <button>Tesla</button>
+      <button>Kia</button>
+      <button>Hyundai</button>
+    </div>
+    <div class="actions">
+      <button class="call">Select</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Phone Dialer</title>
+<link rel="stylesheet" href="C:\Users\sathi\Desktop\css basic\HTML\bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\css\bootstrap.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background:red;
+      margin: 0;
+    }
+    .dialer {
+      background: #060606;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      display: grid;
+      gap: 15px;
+    }
+    .screen {
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 20px;
+      border-radius: 5px;
+      text-align: right;
+      min-height: 40px;
+    }
+    .keypad {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .keypad button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background: yellow;
+      cursor: pointer;
+    }
+    .keypad button:hover {
+      background: #ccc;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+    }
+    .call {
+      background: green;
+      color:red;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .call:hover {
+      background: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="dialer">
+    <div class="screen"></div>
+    <div class="keypad">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>*</button>
+      <button>0</button>
+      <button>#</button>
+    </div>
+    <div class="actions">
+      <button class="call">Call</button>
+    </div>
+  </div>
+</body>
+</html>
